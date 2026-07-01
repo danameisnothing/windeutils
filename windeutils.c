@@ -10,7 +10,7 @@
 #define WD_VOL_DOWN 0x15022024
 #define WD_BRGHT_UP 0xD00D // TODO: working value
 #define WD_BRGHT_DOWN 0xDEAF // TODO: working value
-#define WD_BRGHT_STEP 2
+#define WD_BRGHT_STEP 4
 
 int main(void) {
     if (!RegisterHotKey(NULL, WD_VOL_UP, MOD_WIN, VK_F3)
