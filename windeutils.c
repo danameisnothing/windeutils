@@ -58,7 +58,7 @@ int main(void) {
             WORD ramp[3][256];
             GetDeviceGammaRamp(dc, ramp);
             // sample one for brightness
-            unsigned int brght = ramp[0][5] / 5 - 128;
+            int brght = ramp[0][5] / 5 - 128;
 
             switch (msg.wParam) {
                 case WD_BRGHT_UP: {
